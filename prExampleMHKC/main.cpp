@@ -1,6 +1,7 @@
 #include <iostream>
 #include <utility>
 #include <set>
+#include <vector>
 #include <algorithm>
 #include <iterator>
 
@@ -24,7 +25,7 @@ struct stCmpX   // Cортировкa исходного контейнера п
 void foo()
 {
                                         // Контейнер содержащий исходный набор данных
-    std::set <tdInData, stCmpX> setInData {{1, 10}, {2, 11}, {3, 11}, {4, 11}, {5, 11}, {6, 10}, {7, 11}, {8, 11}, {9, 11}, {10, 11}, {11, 10}} ;
+    std::vector <tdInData> setInData {{1, 10}, {2, 11}, {3, 11}, {4, 11}, {5, 11}, {6, 10}, {7, 11}, {8, 11}, {9, 11}, {10, 11}, {11, 10}} ;
     std::set <tdInData, stCmpX> result ;     // Контейнер содержащий результат
 
     auto it = setInData.begin() ;
