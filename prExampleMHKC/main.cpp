@@ -37,7 +37,7 @@ void foo()
         }
         if (std::distance (it, itSecond) > 1) result.insert(*std::prev (itSecond)) ; // Если в идентичной последовательности больше одного элемента, то добавляем элемент из конца списка
         if (itSecond == setInData.cend()) break ;
-        it = itSecond ;
+        it = itSecond ;                     // Устанавливаем начало следующей идентичной последовательности
     }
     for (auto item : setInData) std::cout << "(" << item.first << ", " << item.second << "), " ;
     std::cout << std::endl ;
